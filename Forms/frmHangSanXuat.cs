@@ -121,7 +121,7 @@ namespace QuanLyBanHang.Forms
                 if (hangSua != null)
                 {
                     // Sửa TenHang -> TenHangSanXuat để khớp CSDL
-                    hangSua.TenHangSanXuat = txtTenHang.Text;
+                    hangSua.TenHangSanXuat = txtTenHang.Text; // thêm ghi chú
                     context.HangSanXuat.Update(hangSua);
                 }
             }
@@ -134,6 +134,11 @@ namespace QuanLyBanHang.Forms
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmHangSanXuat_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

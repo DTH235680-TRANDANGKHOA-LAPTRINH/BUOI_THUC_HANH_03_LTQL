@@ -30,6 +30,8 @@
         {
             groupBox2 = new GroupBox();
             dgvHangSanXuat = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            TenHangSanXuat = new DataGridViewTextBoxColumn();
             grpHangSanXuat = new GroupBox();
             btnThoat = new Button();
             btnLuu = new Button();
@@ -39,8 +41,6 @@
             btnThem = new Button();
             label1 = new Label();
             txtTenHang = new TextBox();
-            ID = new DataGridViewTextBoxColumn();
-            TenHangSanXuat = new DataGridViewTextBoxColumn();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHangSanXuat).BeginInit();
             grpHangSanXuat.SuspendLayout();
@@ -75,6 +75,19 @@
             dgvHangSanXuat.RowHeadersWidth = 62;
             dgvHangSanXuat.Size = new Size(1086, 391);
             dgvHangSanXuat.TabIndex = 0;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 8;
+            ID.Name = "ID";
+            // 
+            // TenHangSanXuat
+            // 
+            TenHangSanXuat.DataPropertyName = "TenHangSanXuat";
+            TenHangSanXuat.HeaderText = "Tên Hãng Sản Xuất";
+            TenHangSanXuat.MinimumWidth = 8;
+            TenHangSanXuat.Name = "TenHangSanXuat";
             // 
             // grpHangSanXuat
             // 
@@ -182,19 +195,6 @@
             txtTenHang.Size = new Size(588, 31);
             txtTenHang.TabIndex = 0;
             // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.MinimumWidth = 8;
-            ID.Name = "ID";
-            // 
-            // TenHangSanXuat
-            // 
-            TenHangSanXuat.DataPropertyName = "TenHangSanXuat";
-            TenHangSanXuat.HeaderText = "Tên Hãng Sản Xuất";
-            TenHangSanXuat.MinimumWidth = 8;
-            TenHangSanXuat.Name = "TenHangSanXuat";
-            // 
             // frmHangSanXuat
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -205,6 +205,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "frmHangSanXuat";
             Text = "Hang San Xuat";
+            Load += frmHangSanXuat_Load_1;
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvHangSanXuat).EndInit();
             grpHangSanXuat.ResumeLayout(false);
