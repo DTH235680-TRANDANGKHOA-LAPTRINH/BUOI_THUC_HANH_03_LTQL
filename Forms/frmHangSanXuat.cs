@@ -130,5 +130,10 @@ namespace QuanLyBanHang.Forms
             MessageBox.Show("Lưu dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             frmHangSanXuat_Load(sender, e);
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

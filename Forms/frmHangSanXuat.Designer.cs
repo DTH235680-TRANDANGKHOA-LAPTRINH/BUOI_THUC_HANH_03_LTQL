@@ -30,8 +30,6 @@
         {
             groupBox2 = new GroupBox();
             dgvHangSanXuat = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            TenHangSanXuat = new DataGridViewTextBoxColumn();
             grpHangSanXuat = new GroupBox();
             btnThoat = new Button();
             btnLuu = new Button();
@@ -41,6 +39,8 @@
             btnThem = new Button();
             label1 = new Label();
             txtTenHang = new TextBox();
+            ID = new DataGridViewTextBoxColumn();
+            TenHangSanXuat = new DataGridViewTextBoxColumn();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHangSanXuat).BeginInit();
             grpHangSanXuat.SuspendLayout();
@@ -49,9 +49,11 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(dgvHangSanXuat);
-            groupBox2.Location = new Point(22, 164);
+            groupBox2.Location = new Point(31, 273);
+            groupBox2.Margin = new Padding(4, 5, 4, 5);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(766, 255);
+            groupBox2.Padding = new Padding(4, 5, 4, 5);
+            groupBox2.Size = new Size(1094, 425);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh Sach Hang San Xuat";
@@ -66,21 +68,13 @@
             dgvHangSanXuat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvHangSanXuat.Columns.AddRange(new DataGridViewColumn[] { ID, TenHangSanXuat });
             dgvHangSanXuat.Dock = DockStyle.Fill;
-            dgvHangSanXuat.Location = new Point(3, 19);
+            dgvHangSanXuat.Location = new Point(4, 29);
+            dgvHangSanXuat.Margin = new Padding(4, 5, 4, 5);
             dgvHangSanXuat.MultiSelect = false;
             dgvHangSanXuat.Name = "dgvHangSanXuat";
-            dgvHangSanXuat.Size = new Size(760, 233);
+            dgvHangSanXuat.RowHeadersWidth = 62;
+            dgvHangSanXuat.Size = new Size(1086, 391);
             dgvHangSanXuat.TabIndex = 0;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
-            // 
-            // TenHangSanXuat
-            // 
-            TenHangSanXuat.HeaderText = "TenHangSanXuat";
-            TenHangSanXuat.Name = "TenHangSanXuat";
             // 
             // grpHangSanXuat
             // 
@@ -92,28 +86,33 @@
             grpHangSanXuat.Controls.Add(btnThem);
             grpHangSanXuat.Controls.Add(label1);
             grpHangSanXuat.Controls.Add(txtTenHang);
-            grpHangSanXuat.Location = new Point(12, 32);
+            grpHangSanXuat.Location = new Point(17, 53);
+            grpHangSanXuat.Margin = new Padding(4, 5, 4, 5);
             grpHangSanXuat.Name = "grpHangSanXuat";
-            grpHangSanXuat.Size = new Size(776, 100);
+            grpHangSanXuat.Padding = new Padding(4, 5, 4, 5);
+            grpHangSanXuat.Size = new Size(1109, 167);
             grpHangSanXuat.TabIndex = 2;
             grpHangSanXuat.TabStop = false;
             grpHangSanXuat.Text = "Thong tin hang san xuat";
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(608, 58);
+            btnThoat.Location = new Point(869, 97);
+            btnThoat.Margin = new Padding(4, 5, 4, 5);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(75, 23);
+            btnThoat.Size = new Size(107, 38);
             btnThoat.TabIndex = 6;
             btnThoat.Text = "Thoat";
             btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
             // 
             // btnLuu
             // 
             btnLuu.ForeColor = Color.Lime;
-            btnLuu.Location = new Point(417, 58);
+            btnLuu.Location = new Point(596, 97);
+            btnLuu.Margin = new Padding(4, 5, 4, 5);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(75, 23);
+            btnLuu.Size = new Size(107, 38);
             btnLuu.TabIndex = 5;
             btnLuu.Text = "Luu";
             btnLuu.UseVisualStyleBackColor = true;
@@ -122,9 +121,10 @@
             // btnHuyBo
             // 
             btnHuyBo.ForeColor = Color.FromArgb(192, 64, 0);
-            btnHuyBo.Location = new Point(509, 58);
+            btnHuyBo.Location = new Point(727, 97);
+            btnHuyBo.Margin = new Padding(4, 5, 4, 5);
             btnHuyBo.Name = "btnHuyBo";
-            btnHuyBo.Size = new Size(75, 23);
+            btnHuyBo.Size = new Size(107, 38);
             btnHuyBo.TabIndex = 5;
             btnHuyBo.Text = "Huy Bo";
             btnHuyBo.UseVisualStyleBackColor = true;
@@ -133,9 +133,10 @@
             // btnXoa
             // 
             btnXoa.ForeColor = Color.Red;
-            btnXoa.Location = new Point(326, 58);
+            btnXoa.Location = new Point(466, 97);
+            btnXoa.Margin = new Padding(4, 5, 4, 5);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(75, 23);
+            btnXoa.Size = new Size(107, 38);
             btnXoa.TabIndex = 4;
             btnXoa.Text = "Xoa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -143,9 +144,10 @@
             // 
             // btnSua
             // 
-            btnSua.Location = new Point(230, 58);
+            btnSua.Location = new Point(329, 97);
+            btnSua.Margin = new Padding(4, 5, 4, 5);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(75, 23);
+            btnSua.Size = new Size(107, 38);
             btnSua.TabIndex = 3;
             btnSua.Text = "Sua";
             btnSua.UseVisualStyleBackColor = true;
@@ -153,9 +155,10 @@
             // 
             // btnThem
             // 
-            btnThem.Location = new Point(133, 58);
+            btnThem.Location = new Point(190, 97);
+            btnThem.Margin = new Padding(4, 5, 4, 5);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(75, 23);
+            btnThem.Size = new Size(107, 38);
             btnThem.TabIndex = 2;
             btnThem.Text = "Them";
             btnThem.UseVisualStyleBackColor = true;
@@ -164,26 +167,42 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 25);
+            label1.Location = new Point(49, 42);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(102, 15);
+            label1.Size = new Size(153, 25);
             label1.TabIndex = 1;
             label1.Text = "Ten hang san xuat";
             // 
             // txtTenHang
             // 
-            txtTenHang.Location = new Point(142, 22);
+            txtTenHang.Location = new Point(203, 37);
+            txtTenHang.Margin = new Padding(4, 5, 4, 5);
             txtTenHang.Name = "txtTenHang";
-            txtTenHang.Size = new Size(413, 23);
+            txtTenHang.Size = new Size(588, 31);
             txtTenHang.TabIndex = 0;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 8;
+            ID.Name = "ID";
+            // 
+            // TenHangSanXuat
+            // 
+            TenHangSanXuat.DataPropertyName = "TenHangSanXuat";
+            TenHangSanXuat.HeaderText = "Tên Hãng Sản Xuất";
+            TenHangSanXuat.MinimumWidth = 8;
+            TenHangSanXuat.Name = "TenHangSanXuat";
             // 
             // frmHangSanXuat
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(groupBox2);
             Controls.Add(grpHangSanXuat);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "frmHangSanXuat";
             Text = "Hang San Xuat";
             groupBox2.ResumeLayout(false);

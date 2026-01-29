@@ -123,5 +123,20 @@ namespace QuanLyBanHang.Forms
             MessageBox.Show("Đã lưu dữ liệu thành công!");
             frmLoaiSanPham_Load(sender, e);
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmLoaiSanPham_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvLoaiSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

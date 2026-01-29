@@ -56,28 +56,33 @@
             groupBox1.Controls.Add(btnThem);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtTenLoai);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(17, 20);
+            groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(776, 100);
+            groupBox1.Padding = new Padding(4, 5, 4, 5);
+            groupBox1.Size = new Size(1109, 167);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thong tin loai san pham";
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(608, 58);
+            btnThoat.Location = new Point(869, 97);
+            btnThoat.Margin = new Padding(4, 5, 4, 5);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(75, 23);
+            btnThoat.Size = new Size(107, 38);
             btnThoat.TabIndex = 6;
             btnThoat.Text = "Thoat";
             btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
             // 
             // btnLuu
             // 
             btnLuu.ForeColor = Color.Lime;
-            btnLuu.Location = new Point(417, 58);
+            btnLuu.Location = new Point(596, 97);
+            btnLuu.Margin = new Padding(4, 5, 4, 5);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(75, 23);
+            btnLuu.Size = new Size(107, 38);
             btnLuu.TabIndex = 5;
             btnLuu.Text = "Luu";
             btnLuu.UseVisualStyleBackColor = true;
@@ -86,9 +91,10 @@
             // btnHuyBo
             // 
             btnHuyBo.ForeColor = Color.FromArgb(192, 64, 0);
-            btnHuyBo.Location = new Point(509, 58);
+            btnHuyBo.Location = new Point(727, 97);
+            btnHuyBo.Margin = new Padding(4, 5, 4, 5);
             btnHuyBo.Name = "btnHuyBo";
-            btnHuyBo.Size = new Size(75, 23);
+            btnHuyBo.Size = new Size(107, 38);
             btnHuyBo.TabIndex = 5;
             btnHuyBo.Text = "Huy Bo";
             btnHuyBo.UseVisualStyleBackColor = true;
@@ -97,9 +103,10 @@
             // btnXoa
             // 
             btnXoa.ForeColor = Color.Red;
-            btnXoa.Location = new Point(326, 58);
+            btnXoa.Location = new Point(466, 97);
+            btnXoa.Margin = new Padding(4, 5, 4, 5);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(75, 23);
+            btnXoa.Size = new Size(107, 38);
             btnXoa.TabIndex = 4;
             btnXoa.Text = "Xoa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -107,18 +114,20 @@
             // 
             // btnSua
             // 
-            btnSua.Location = new Point(230, 58);
+            btnSua.Location = new Point(329, 97);
+            btnSua.Margin = new Padding(4, 5, 4, 5);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(75, 23);
+            btnSua.Size = new Size(107, 38);
             btnSua.TabIndex = 3;
             btnSua.Text = "Sua";
             btnSua.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
-            btnThem.Location = new Point(133, 58);
+            btnThem.Location = new Point(190, 97);
+            btnThem.Margin = new Padding(4, 5, 4, 5);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(75, 23);
+            btnThem.Size = new Size(107, 38);
             btnThem.TabIndex = 2;
             btnThem.Text = "Them";
             btnThem.UseVisualStyleBackColor = true;
@@ -127,25 +136,29 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 25);
+            label1.Location = new Point(49, 42);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(102, 15);
+            label1.Size = new Size(154, 25);
             label1.TabIndex = 1;
             label1.Text = "Ten loai san pham";
             // 
             // txtTenLoai
             // 
-            txtTenLoai.Location = new Point(142, 22);
+            txtTenLoai.Location = new Point(203, 37);
+            txtTenLoai.Margin = new Padding(4, 5, 4, 5);
             txtTenLoai.Name = "txtTenLoai";
-            txtTenLoai.Size = new Size(413, 23);
+            txtTenLoai.Size = new Size(588, 31);
             txtTenLoai.TabIndex = 0;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dgvLoaiSanPham);
-            groupBox2.Location = new Point(22, 144);
+            groupBox2.Location = new Point(31, 240);
+            groupBox2.Margin = new Padding(4, 5, 4, 5);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(766, 255);
+            groupBox2.Padding = new Padding(4, 5, 4, 5);
+            groupBox2.Size = new Size(1094, 425);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh Sach Loai San Pham";
@@ -160,31 +173,40 @@
             dgvLoaiSanPham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLoaiSanPham.Columns.AddRange(new DataGridViewColumn[] { ID, TenLoaiSanPham });
             dgvLoaiSanPham.Dock = DockStyle.Fill;
-            dgvLoaiSanPham.Location = new Point(3, 19);
+            dgvLoaiSanPham.Location = new Point(4, 29);
+            dgvLoaiSanPham.Margin = new Padding(4, 5, 4, 5);
             dgvLoaiSanPham.MultiSelect = false;
             dgvLoaiSanPham.Name = "dgvLoaiSanPham";
-            dgvLoaiSanPham.Size = new Size(760, 233);
+            dgvLoaiSanPham.RowHeadersWidth = 62;
+            dgvLoaiSanPham.Size = new Size(1086, 391);
             dgvLoaiSanPham.TabIndex = 0;
+            dgvLoaiSanPham.CellContentClick += dgvLoaiSanPham_CellContentClick;
             // 
             // ID
             // 
+            ID.DataPropertyName = "ID";
             ID.HeaderText = "ID";
+            ID.MinimumWidth = 8;
             ID.Name = "ID";
             // 
             // TenLoaiSanPham
             // 
+            TenLoaiSanPham.DataPropertyName = "TenLoaiSanPham";
             TenLoaiSanPham.HeaderText = "TenLoaiSanPham";
+            TenLoaiSanPham.MinimumWidth = 8;
             TenLoaiSanPham.Name = "TenLoaiSanPham";
             // 
             // frmLoaiSanPham
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "frmLoaiSanPham";
             Text = " Loai San Pham";
+            Load += frmLoaiSanPham_Load_1;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
